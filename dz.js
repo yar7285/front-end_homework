@@ -67,6 +67,14 @@ if(buttons[0] === buttons1){
     buttons[3].removeAttribute('id','y');
          return;
 }
+    if(buttons1 === null && buttons2 === null && buttons3 === null && buttons4 === null){
+        buttons1 =document.body.children[1].children[0].id = 'e';
+        buttons2 =document.body.children[1].children[1].id = 'r';
+        buttons3 =document.body.children[1].children[2].id = 't';
+        buttons4 =document.body.children[1].children[3].id = 'y';
+        buttons[3].removeAttribute('style','background-color: orange');
+        return;
+    }
            
 }
  button3.addEventListener('mousedown', nextel, false);
@@ -105,6 +113,13 @@ if(buttons[3] === buttons1){
     buttons[0].removeAttribute('id','y');
          return;
 }
-    
+     if(buttons1 === null && buttons2 === null && buttons3 === null && buttons4 === null){
+        buttons1 =document.body.children[1].children[0].id = 'e';
+        buttons2 =document.body.children[1].children[1].id = 'r';
+        buttons3 =document.body.children[1].children[2].id = 't';
+        buttons4 =document.body.children[1].children[3].id = 'y';
+        buttons[0].removeAttribute('style','background-color: orange');
+        return;
+    }
 }
  button4.addEventListener('mousedown', previousel, false);
